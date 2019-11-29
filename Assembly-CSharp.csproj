@@ -70,6 +70,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\ModelScene\BuildModel.cs" />
     <Compile Include="Assets\Scripts\BaseUI.cs" />
+    <Compile Include="Assets\Scripts\Begin.cs" />
     <Compile Include="Assets\Scripts\Config\ConfigManagerByJson.cs" />
     <Compile Include="Assets\Scripts\Config\IConfigManager.cs" />
     <Compile Include="Assets\Scripts\Config\SysDefine.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\Scripts\Localization\LauguageMgr.cs" />
     <Compile Include="Assets\Scripts\Log\Log.cs" />
     <Compile Include="Assets\Scripts\LoginUI.cs" />
+    <Compile Include="Assets\Scripts\MainModelUI.cs" />
     <Compile Include="Assets\Scripts\MainUI.cs" />
     <Compile Include="Assets\Scripts\ProConst.cs" />
     <Compile Include="Assets\Scripts\PropDataUI.cs" />

@@ -22,4 +22,8 @@ public class ProConst
     public const string HeroUI = "HeroUI";
     public const string ShopUI = "ShopUI";
     public const string PropDataUI = "PropDataUI";
+    public const string MainModelUI = "MainModelUI";
+
+
+
 }

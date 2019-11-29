@@ -1,29 +1,49 @@
 ﻿{
 "ConfigInfo":
-[
-{"Key":"LoginUI",
-"Value":"UIPrefabs\\LoginUI"},
+  [
+    {
+      "Key": "LoginUI",
+      "Value": "UIPrefabs\\LoginUI"
+    },
 
-{"Key":"SelectUI",
-"Value":"UIPrefabs\\SelectUI"},
+    {
+      "Key": "SelectUI",
+      "Value": "UIPrefabs\\SelectUI"
+    },
 
-{"Key":"HeroUI",
-"Value":"UIPrefabs\\HeroUI"},
+    {
+      "Key": "HeroUI",
+      "Value": "UIPrefabs\\HeroUI"
+    },
 
-{"Key":"MainUI",
-"Value":"UIPrefabs\\MainUI"},
+    {
+      "Key": "MainUI",
+      "Value": "UIPrefabs\\MainUI"
+    },
 
-{"Key":"ShopUI",
-"Value":"UIPrefabs\\ShopUI"},
+    {
+      "Key": "ShopUI",
+      "Value": "UIPrefabs\\ShopUI"
+    },
 
-{"Key":"PropDataUI",
-"Value":"UIPrefabs\\PropDataUI"},
+    {
+      "Key": "PropDataUI",
+      "Value": "UIPrefabs\\PropDataUI"
+    },
 
-{"Key":"GoodsInfoForms",
-"Value":"UIPrefabs\\GoodsInfoForms"},
+    {
+      "Key": "GoodsInfoForms",
+      "Value": "UIPrefabs\\GoodsInfoForms"
+    },
 
-{"Key":"ConfirmForms",
-"Value":"UIPrefabs\\ConfirmForms"}
+    {
+      "Key": "ConfirmForms",
+      "Value": "UIPrefabs\\ConfirmForms"
+    },
+    {
+      "Key": "MainModelUI",
+      "Value": "UIPrefabs\\MainModelUI"
+    }
 
-]
+  ]
 }
