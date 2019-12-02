@@ -68,6 +68,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Drag.cs" />
     <Compile Include="Assets\ModelScene\BuildModel.cs" />
     <Compile Include="Assets\Scripts\BaseUI.cs" />
     <Compile Include="Assets\Scripts\Begin.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Scripts\EventAndMessage\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\ExcelDataManager\DataManager.cs" />
     <Compile Include="Assets\Scripts\Exception\AnalysisJsonException.cs" />
+    <Compile Include="Assets\Scripts\FingerController.cs" />
     <Compile Include="Assets\Scripts\Helps\ResourcesMgr.cs" />
     <Compile Include="Assets\Scripts\Helps\UIMaskMgr.cs" />
     <Compile Include="Assets\Scripts\Helps\UnityHelper.cs" />
