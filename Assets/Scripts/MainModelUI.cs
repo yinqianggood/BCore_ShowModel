@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UIFrameWork;
+using WJExcelDataClass;
 public class MainModelUI : BaseUI
 {
     public RawImage modelImg;
@@ -19,6 +20,20 @@ public class MainModelUI : BaseUI
     public float modelPadding = 12f;
     private int mPrefabCount;
     private int minFloor = 4;
+    public GameObject mItemStylePrefab;
+    public Transform mItemStyleParent;
+    public Text txt_ModelName;
+    public GameObject go2DView;
+    public GameObject goModelDesc;
+    public Text txtNameTitle;
+    public Text txtModelDesc;
+    public GameObject goPriceDesc;
+    public Text txtPriceDesc;
+    public GameObject goClothView;
+    public GameObject txtClothDesc;
+
+
+
 
 
 
@@ -39,7 +54,7 @@ public class MainModelUI : BaseUI
     // Start is called before the first frame update
     void Start()
     {
-        
+        InitData();
     }
 
     // Update is called once per frame
@@ -48,12 +63,55 @@ public class MainModelUI : BaseUI
         
     }
 
+    public void InitData()
+    {
+        DataManager DM = new DataManager();
+        DM.LoadAll();
+        Dictionary<int, ModelItem> dic = DM.p_Model.Dict;
+        List<MyItemModel> mItemModelList = new List<MyItemModel>();
+        foreach (var item in dic)
+        {
+            ModelItem mi = item.Value;
+            MyItemModel myItemModel = new MyItemModel(mi, mItemStylePrefab, mItemStyleParent);
+            myItemModel.callBack = OnBuildStyleClick;
+            mItemModelList.Add(myItemModel);
+        }
+       
+    }
+    private ModelItem mModelData;//当前旋转的模型数据.
+    //点击了楼型选择.
+    private void OnBuildStyleClick(ModelItem item)
+    {
+        mModelData = item;
+        txt_ModelName.text = item.modelName;
+    }
+    //点击了模型名称.
+    public void OnBtnModelNameClick()
+    {
+        goModelDesc.SetActive(true);
+        txtNameTitle.text = string.IsNullOrEmpty(mModelData.modelName) ? " ": mModelData.modelName;
+    }
+    //点击了2D平面展示
+    public void OnBtn2DClick()
+    {
+        go2DView.SetActive(true);
+
+    }
+    public void OnBtnClothClick()
+    {
+        goClothView.SetActive(true);
+    }
+    public void OnBtnPriceClick()
+    {
+        goPriceDesc.SetActive(true);
+    }
+
 
     //点击创建
     public void OnBtnBuildClick()
     {
         if (mPrefabCount <= 0) return;
-        modelParent.gameObject.GetComponent<Drag>().enabled=false;
+        modelParent.transform.parent.gameObject.GetComponent<Drag>().enabled=false;
         ClearChild(modelParent);
         StartCoroutine(DelayBuild(prefabs[0]));
 
@@ -70,7 +128,7 @@ public class MainModelUI : BaseUI
             itemObj.SetActive(true);
             yield return new WaitForSeconds(0.5f);
         }
-        modelParent.gameObject.GetComponent<Drag>().enabled = true;
+        modelParent.transform.parent.gameObject.GetComponent<Drag>().enabled = true;
     }
     private void ClearChild(Transform parent)
     {
@@ -107,5 +165,9 @@ public class MainModelUI : BaseUI
             if (modelParent.localScale.x < 0.05f) return;
             modelParent.localScale = modelParent.localScale * 0.9f;
         }
+    }
+    public void OnBtnMoreClick()
+    {
+        Application.OpenURL("http://www.broad.com/");
     }
 }

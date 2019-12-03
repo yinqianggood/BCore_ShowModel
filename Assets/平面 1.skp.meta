@@ -1,21 +1,41 @@
 fileFormatVersion: 2
-guid: 80583e90d99b11c49822bf43c07da13a
-ModelImporter:
-  serializedVersion: 24
+guid: 62ae225f3b6001c4aa1ecae0ef750022
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000
+  assetHash:
+    serializedVersion: 2
+    Hash: c8573b9ae12262c5bdd6632ecb3bc857
+  longitude: 116.38833
+  latitude: 39.92889
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -0.014954006, y: 0.32424912, z: -2.3269713}
+      lookAt: {x: 3.414811, y: -5.6592526, z: 9.748587}
+      up: {x: 0.11755873, y: 0.9026987, z: 0.41390222}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
   fileIDToRecycleName:
-    100000: Mesh1_Group1_Model
+    100000: Group 1
     100002: //RootNode
-    400000: Mesh1_Group1_Model
+    400000: Group 1
     400002: //RootNode
-    2100000: Mesh1_Group1_ModelMat
-    2300000: Mesh1_Group1_Model
-    3300000: Mesh1_Group1_Model
-    4300000: Mesh1_Group1_Model
+    2100000: _
+    2300000: Group 1
+    3300000: Group 1
+    4300000: Mesh Group 1
   externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 2
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -39,10 +59,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.0254
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -53,10 +73,10 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -73,7 +93,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

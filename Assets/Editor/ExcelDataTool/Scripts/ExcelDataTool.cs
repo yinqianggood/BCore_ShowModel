@@ -289,7 +289,10 @@ namespace WJExcelDataManager
                         List<int> list = new List<int>();
                         foreach (var item in ints)
                         {
-                            list.Add(int.Parse(item));
+                            //Debug.Log("item------------:" + item);
+                            string str = item;
+                           list.Add(int.Parse(str));
+                           
                         }
                         o = list;
                         break;

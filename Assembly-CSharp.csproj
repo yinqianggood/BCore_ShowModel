@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\LoginUI.cs" />
     <Compile Include="Assets\Scripts\MainModelUI.cs" />
     <Compile Include="Assets\Scripts\MainUI.cs" />
+    <Compile Include="Assets\Scripts\MyItemModel.cs" />
     <Compile Include="Assets\Scripts\ProConst.cs" />
     <Compile Include="Assets\Scripts\PropDataUI.cs" />
     <Compile Include="Assets\Scripts\SelectUI.cs" />
