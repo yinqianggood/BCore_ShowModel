@@ -43,12 +43,23 @@ public class Drag : MonoBehaviour
         //鼠标左键旋转物体
         if (Input.GetMouseButton(0))
         {
-           // float axis = Input.GetAxis("Mouse X");
-           // this.transform.Rotate(Vector3.up * Time.deltaTime * speed * axis);
+            //float axis = Input.GetAxis("Mouse X");
+            //this.transform.Rotate(Vector3.up * Time.deltaTime * speed * axis);
             float h = Time.deltaTime * speed * Input.GetAxis("Mouse X");
             float v = Time.deltaTime * speed * Input.GetAxis("Mouse Y");
-
+            if (transform.localRotation.x > 0)
+            {
+                transform.localEulerAngles = new Vector3(0, transform.localRotation.y, 0);
+                v = 0;
+                return;
+            }
             transform.Rotate(v, -h, 0);
+
+
+
         }
     }
+
+    
+
 }
