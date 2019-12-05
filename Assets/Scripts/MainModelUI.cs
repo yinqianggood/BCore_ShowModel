@@ -149,8 +149,20 @@ public class MainModelUI : BaseUI
         if (mPrefabCount <= 0) return;
         modelParent.transform.parent.gameObject.GetComponent<Drag>().enabled=false;
         ClearChild(modelParent);
-        StartCoroutine(DelayBuild(prefabs[0]));
+        string modelName = mModelData.modelName;
+        StartCoroutine(DelayBuild(GetModelPrefab()));
 
+    }
+    private GameObject GetModelPrefab()
+    {
+        for (int i = 0; i < prefabs.Length; i++)
+        {
+            if(prefabs[i].name==mModelData.modelName)
+            {
+                return prefabs[i];
+            }
+        }
+        return prefabs[0];
     }
 
     IEnumerator DelayBuild(GameObject go)

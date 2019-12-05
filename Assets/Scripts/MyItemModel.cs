@@ -28,7 +28,7 @@ public class MyItemModel
                 go.transform.localPosition = Vector3.zero;
                 go.transform.localScale = Vector3.one;
             }
-            go.transform.Find("Image").GetComponent<Image>().sprite = Resources.Load("UI/icon_louxing", typeof(Sprite)) as Sprite;//ItemData.icon2D.
+            go.transform.Find("Image").GetComponent<Image>().sprite = Resources.Load("UI/"+ItemData.icon2D, typeof(Sprite)) as Sprite;//ItemData.icon2D.
             Button btn= go.GetComponent<Button>();
             // EventTriggerListener.Get(go).onClick += OnBtnClick;
             go.GetComponent<Button>().onClick.AddListener(delegate() {
